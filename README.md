@@ -1,2 +1,1 @@
-# JamJournal
-Jam Journal
+# projectTwo
