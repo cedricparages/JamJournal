@@ -1,7 +1,6 @@
 // * Import req. packages
 var mysql = require("../server.js");
 var bcrypt = require("bcryptjs");
-
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
         email: {
@@ -16,12 +15,14 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
+        userFavorites: {
+            type: DataTypes.STRING,
+            allowNull: true
+        }
     });
-
     User.prototype.validPassword = function(password) {
         return bcrypt.compareSync(password, this.password);
     };
-
     User.addHook("beforeCreate", function(user){
         user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null)
     });

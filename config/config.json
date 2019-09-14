@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Christmas1",
+    "password": "coleakenta",
     "database": "loginApp",
     "host": "127.0.0.1",
     "dialect": "mysql"

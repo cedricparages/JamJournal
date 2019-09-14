@@ -22,7 +22,6 @@
   float: right;
   padding: 10px;
  }
- / Clear floats on search bar/
  form.example::after {
   content: "";
   clear: both;

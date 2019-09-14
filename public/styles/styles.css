@@ -52,11 +52,10 @@
   color: #f1f1f1;
  }
 
+
  #artists {
   text-align: left;
   font-family: 'Roboto Condensed', sans-serif;
-  border: 3px black;
-  background-color: aquamarine;
  }
 
  footer {
